@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .left, .right {
+      float: left;
+      width: 20%; /* The width is 20%, by default */
+    }
+
+    .main {
+      float: left;
+      width: 60%; /* The width is 60%, by default */
+    }
+
+    /* Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="w3-container w3-dark-gray">
+  <h1 style="font-size: 5vw; color: black;">Detective Conan: Black Iron Submarine</h1>
+</div>
+
+<div class="w3-row-padding w3-blue-gray">
+  <div class="w3-third left">
+    <h2 >Plot</h2>
+    <p>Many engineers from around the world gather at the Interpol marine facility "Pacific Buoy" on Hachijo-jima, in the off sea south of central Tokyo Prefecture coast, to witness the launch of a new system that connects all law enforcement camera systems around the world and enables facial recognition worldwide. Conan, along with his friends Kogoro, Ran, Agasa, Haibara, and the Detective Boys, also heads on the island with an invitation from Sonoko to see the whales. He receives a message from Subaru, who says that an Europol agent has been murdered in Germany by Gin. Perturbed, Conan sneaks onto the police ship led by Kuroda, which is bringing them to the island to protect the completion work, and tours the new facility, just in time for the Black Organization to kidnap a female engineer, seeking a piece of important data in her USB drive. A terrifying howl of screws is heard from the ocean, as an unknown person approaches Haibara.</p>
+  </div>
+
+  <div class="w3-third main">
+    <picture>
+      <source srcset="https://qianp.com/uploads/images/kind/20230201/20230201093850_70551.jpg" media="(max-width: 1440px)">
+      <source srcset="https://qianp.com/uploads/images/kind/20230201/20230201093850_70551.jpg" media="(max-width: 3440px)">
+      <source srcset="https://qianp.com/uploads/images/kind/20230201/20230201093850_70551.jpg">
+      <img src="https://qianp.com/uploads/images/kind/20230201/20230201093850_70551.jpg" alt="Flowers" style="max-width: 100%; height: auto;">
+    </picture>
+    <h1 style="font-size: 5vw; color: black;">Coming Now!</h1>
+  </div>
+
+  <div class="w3-third right">
+    <h2>About</h2>
+    <P>Release date: 16 Aug 2023</P>
+    <P>Language: Japanese/English</P>
+    <p>Time: 1h 49m</p>
+    <p>Price: 15$</p>
+  </div>
+</div>
+
+</body>
+</html>

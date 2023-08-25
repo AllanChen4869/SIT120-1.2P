@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+</style>
+<title>JavaScript Concepts Example</title>
+</head>
+<body>
+  <h2>String Methods</h2>
+  <script>
+    // String methods
+    const str = "Hello, World!";
+    document.write("Original String: " + str + "<br>");
+    document.write("Length: " + str.length + "<br>");
+    document.write("Uppercase: " + str.toUpperCase() + "<br>");
+    document.write("Lowercase: " + str.toLowerCase() + "<br>");
+    document.write("Substring: " + str.substring(7) + "<br>");
+    document.write("Index of 'World': " + str.replace("Hello","Hi") + "<br>");
+  </script>
+
+  <h2>Number Methods</h2>
+  <script>
+    // Number methods
+    const num = 42.789;
+    document.write("Original Number: " + num + "<br>");
+    document.write("Fixed to 2 Decimals: " + num.toFixed(2) + "<br>");
+    document.write("Exponential Notation: " + num.toExponential() + "<br>");
+    document.write("Rounded: " + Math.round(num) + "<br>");
+    document.write("Square Root: " + Math.sqrt(num) + "<br>");
+  </script>
+
+  <h2>Array Methods</h2>
+  <script>
+    // Array methods
+    const arr = [1, 2, 3, "four", "five"];
+    document.write("Original Array: " + arr + "<br>");
+    document.write("Joined Array: " + arr.join(", ") + "<br>");
+    document.write("Last Element: " + arr[arr.length - 1] + "<br>");
+    document.write("Index of 'four': " + arr.indexOf("four") + "<br>");
+
+    const numArr = [8, 2, 6, 4, 9];
+    document.write("Sum of Numbers: " + numArr.reduce((acc, curr) => acc + curr, 0) + "<br>");
+  </script>
+
+  <h2>Date Methods</h2>
+  <script>
+    // Date methods
+    const currentDate = new Date();
+    document.write("Current Date: " + currentDate + "<br>");
+    document.write("Month: " + (currentDate.getMonth() + 1) + "<br>");
+    document.write("Day: " + currentDate.getDate() + "<br>");
+    document.write("Year: " + currentDate.getFullYear() + "<br>");
+    document.write("Time: " + currentDate.toLocaleTimeString() + "<br>");
+  </script>
+
+  <h2>Function Methods</h2>
+  <script>
+    // Function methods
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+    document.write(greet("World") + "<br>");
+
+    const addNumbers = (a, b) => a + b;
+    document.write("Sum: " + addNumbers(5, 7) + "<br>");
+  </script>
+</body>
+</html>
